@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Map & Access</title>
+  </head>
+
+  <body>
+    <body>
+      <div id="wrapper-sections">
+      <header class="header">
+        <!--logotipo-->
+        <a href="index.html"
+          ><img src="images/logo.svg" width="auto" height="45"
+        /></a>
+        <nav class="header__links">
+          <a href="./index.html">Home</a>
+          <a href="./arts_culture.html">Arts & Culture</a>
+          <a href="./eating.html">Eating</a>
+          <a href="./shopping.html">Shopping</a>
+          <a href="./map_access.html">Map & Access</a>
+        </nav>
+      </header>
+
+      <div class="content">
+        <h2>Access to Airports and Main Station</h2>
+
+    <h3>Aomori Airport</h3>
+    <img src="images/airport.jpg" width="100%" height="auto"/>
+
+    <h3>Aomori Station</h3>
+    <img src="images/station.jpg" width="100%" height="auto""/>
+
+    <h2>Places of interest</h2>
+
+    <img src="images/aomori_map.jpg" width="100%" height="auto"/>
+
+    <h2>Book a tour</h2>
+
+    <section id="formulario">
+      <!-- formulario -->
+
+      <form action="">
+        <label for="clientName">Name: </label>
+        <input type="text" name="yourName" />
+
+        <br><br>
+
+        <label for="clientEmail">Email: </label>
+        <input type="email" />
+        <br><br>
+
+        <!--desplegable-->
+
+        <select name="Language" id="">
+          <option value="EN">English</option>
+          <option value="ES">Spanish</option>
+          <option value="JP">Japanese</option>
+        </select>
+        <br><br>
+
+        <!--Botones de radio-->
+
+        <div>
+          Group tour:
+          <input type="radio" name="type" value="group" />
+        </div>
+        <br />
+        <div>
+          Private tour:
+          <input type="radio" name="type" value="private" />
+        </div>
+        <br />
+        <div>
+
+        <!--checkbox-->
+
+        <div>
+          Suscribe to Newsletter
+
+          <input type="checkbox" name="agree" value="1" />
+        </div>
+
+        <!-- textarea -->
+
+        <textarea name="" id="" cols="120" rows="6"> </textarea>
+
+        <br><br>
+        <!--botones-->
+
+        <input class=buttonClear type="reset" value="Clear" />
+        <input class=buttonSend type="submit" value="Send" />
+      </form>
+
+      <br><br><br>
+    </div>
+
+  </div>
+    <footer class="footer">
+      <p class="footer__text">Aomori GUIDE</p>
+      <div class="footer__social">
+        <img src=images/logo_fb.svg width="40" height="40"/> <img
+        src=images/logo_ig.svg width="40" height="40"/>
+      </div>
+
+      <p class="footer__text">Copyright © 2021. All Rights Reserved.</p>
+    </footer>
+  </div>
+  </body>
+</html>
+
