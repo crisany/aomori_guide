@@ -1,131 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aomori GUIDE - Arts & Culture</title>
+    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,300&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Arts & Culture</title>
   </head>
-
   <body>
-    <div id="wrapper-arts">
-      <header class="header">
-        <!--logotipo-->
-        <a href="index.html"
-          ><img src="images/logo.svg" width="auto" height="45"
-        /></a>
-        <nav class="header__links">
-          <a href="./index.html">Home</a>
-          <a href="./arts_culture.html">Arts & Culture</a>
-          <a href="./eating.html">Eating</a>
-          <a href="./shopping.html">Shopping</a>
-          <a href="./map_access.html">Map & Access</a>
-        </nav>
+    <div>
+      <!-- Navbar -->
+      <header>
+        <div class="row g-0">
+          <div class="col-12 px-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"
+                  ><img
+                    src="images/logo.svg"
+                    width="auto"
+                    height="45"
+                    alt="Aomori Guide Logo"
+                /></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link" href="index.html"
+                      >Home</a
+                    >
+                    <a class="nav-link active" aria-current="page"" href="arts_culture.html"
+                      >Arts & Culture</a
+                    >
+                    <a class="nav-link" href="eating.html">Eating</a>
+                    <a class="nav-link" href="shopping.html">Shopping</a>
+                    <a class="nav-link" href="map_access.html">Map & Access</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
       </header>
 
-      <img
-        class="image"
-        src="images/nebuta.jpg"
-        alt="aomori landscape"
-        width="100%"
-      />
-
-      <div class="content">
-        <h4>Nebuta Festival: One of Japan's Hottest Festivals</h4>
-
-        <h2>Events in Aomori</h2>
-
-        <h3>
-          Enjoy natural and cultural events that represent Aomori in its
-          respective seasons.
-        </h3>
-        <section id="tabla">
-          <!--tabla-->
-          <table>
-            <tr>
-              <!--headers-->
-              <th>Season</th>
-              <th>Dates</th>
-              <th>Events</th>
-            </tr>
-
-            <tr>
-              <!--contenido -->
-              <td>Spring</td>
-              <td>[March 29 - March 31]</td>
-              <td>Hakkoda “Snow Corridor and Hot Springs Walk”</td>
-            </tr>
-
-            <tr>
-              <!--contenido-->
-              <td>Summer</td>
-              <td>[August 2 - 7]</td>
-              <td>Aomori Nebuta Festival</td>
-            </tr>
-
-            <tr>
-              <!--contenido-->
-              <td>Autumn</td>
-              <td>[Late September]</td>
-              <td>Moya Plateau Cosmos Festival</td>
-            </tr>
-
-            <tr>
-              <!--contenido-->
-              <td>Winter</td>
-              <td>[Early February]</td>
-              <td>Aomori Winter Festival</td>
-            </tr>
-          </table>
-        </section>
-        <br />
-
-        <div>
-          <!--info evento 1-->
-          <h3 class="names">Aomori Winter Festival</h3>
-          <br />
+      <!-- Featured festival -->
+      <div class="row g-0">
+        <div class="col-12">
           <img
-            class="content__img"
-            src="images/winter_festival.jpg"
-            alt="festival"
-            width="800"
-            height="400"
+            src="images/nebuta.jpg"
+            alt="nebuta festival"
+            width="100%"
+            style="height: 50vh; object-fit: cover"
           />
+        </div>
+      </div>
+      <div class="row g-0 px-2">
+        <small>Nebuta Festival: One of Japan's Hottest Festivals</small>
+      </div>
 
-          <p class="description-places">
-            The theme of the festival is “Let’s play with snow.” There is a huge
-            snow slide, and many recreational activities for family and friends.
-            <br />
-            <br />
-            Address: 2-chome, Gappo, Aomori-shi, Aomori 030-0902
-            <br />
+      <!-- Events -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="page-header py-3">
+              <h2 class="fw-bold">Events in Aomori</h2>
+            </div>
+            <div class="row">
+              <p class="lead">
+                Enjoy natural and cultural events that represent Aomori in its
+                respective seasons.
+              </p>
+            </div>
 
-            <br />
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Season</th>
+                  <th scope="col">Dates</th>
+                  <th scope="col">Events</th>
+                </tr>
+              </thead>
+              <tbody class="table-light">
+                <tr>
+                  <th scope="row">Spring</th>
+                  <td>[March 29 - March 31]</td>
+                  <td>Hakkoda “Snow Corridor and Hot Springs Walk”</td>
+                </tr>
+                <tr>
+                  <th scope="row">Summer</th>
+                  <td>[August 2 - 7]</td>
+                  <td>Aomori Nebuta Festival</td>
+                </tr>
+                <tr>
+                  <th scope="row">Autumn</th>
+                  <td>[Late September]</td>
+                  <td>Moya Plateau Cosmos Festival</td>
+                </tr>
+                <tr>
+                  <th scope="row">Winter</th>
+                  <td>[Early February]</td>
+                  <td>Aomori Winter Festival</td>
+                </tr>
+              </tbody>
+            </table>
 
-            Time : Early February
-          </p>
+            <h4 class="my-4">Aomori Winter Festival</h4>
 
-          <br />
+            <img
+              class="content__img"
+              src="images/winter_festival.jpg"
+              alt="festival"
+              width="100%"
+              style="object-fit: cover"
+            />
+
+            <p class="mt-3">
+              The theme of the festival is “Let’s play with snow.” There is a
+              huge snow slide, and many recreational activities for family and
+              friends. Winter festival to enjoy Aomori’s freezing season Enjoy
+              snow arts such as snow sculptures and winter fireworks that can
+              taste in only this season. * Events schedules are subject to
+              change without notice due to the weather.
+            </p>
+            <p>Time: Early February</p>
+            <p>Address: 2-chome, Gappo, Aomori-shi, Aomori 030-0902</p>
+            <div class="ratio ratio-16x9 mb-4">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6037.812842229347!2d140.77091202804084!3d40.830019085291156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f9b9ef6812847a3%3A0x9295dacf16725b8e!2s030-0902%2C%20Japan!5e0!3m2!1sen!2smx!4v1629573472254!5m2!1sen!2smx"
+                width="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
 
-      <footer class="footer">
-        <p class="footer__text">Aomori GUIDE</p>
-        <br />
-        <div class="footer__social">
-          <img src=images/logo_fb.svg width="40" height="40"/> <img
-          src=images/logo_ig.svg width="40" height="40"/>
-        </div>
-
-        <p class="footer__text">Copyright © 2021. All Rights Reserved.</p>
-      </footer>
+      <!-- Footer -->
+      <div>
+        <footer class="text-center">
+          <div class="text-center text-white p-3">Aomori GUIDE</div>
+          <div class="container pt-2">
+            <img src=images/logo_fb.svg width="40" height="40"/> <img
+            src=images/logo_ig.svg width="40" height="40"/>
+          </div>
+          <div class="text-center text-white p-4">
+            Copyright © 2021. All Rights Reserved.
+          </div>
+        </footer>
+      </div>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
