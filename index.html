@@ -1,111 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aomori GUIDE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
   </head>
-
   <body>
-    <div id="wrapper">
-      <header class="header">
-        <!--logotipo-->
-        <a href="index.html"
-          ><img src="images/logo.svg" width="auto" height="45"
-        /></a>
-        <nav class="header__links">
-          <a href="./index.html">Home</a>
-          <a href="./arts_culture.html">Arts & Culture</a>
-          <a href="./eating.html">Eating</a>
-          <a href="./shopping.html">Shopping</a>
-          <a href="./map_access.html">Map & Access</a>
-        </nav>
+    <div>
+      <!-- Navbar -->
+      <header>
+        <div class="row g-0">
+          <div class="col-12 px-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"
+                  ><img
+                    src="images/logo.svg"
+                    width="auto"
+                    height="45"
+                    alt="Aomori Guide Logo"
+                /></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html"
+                      >Home</a
+                    >
+                    <a class="nav-link" href="arts_culture.html">Arts & Culture</a>
+                    <a class="nav-link" href="eating.html">Eating</a>
+                    <a class="nav-link" href="shopping.html">Shopping</a>
+                    <a class="nav-link" href="map_access.html">Map & Access</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
       </header>
 
-      <main class="main">
-        <!--hero section-->
-        <div class="hero">
-          <h1>Aomori</h1>
-          <h2>Take the road less traveled to Aomori</h2>
-          <button id="hero-button">Discover</button>
-        </div>
-      </main>
-
-      <div class="explore">
-        <h2 class="title">Explore Aomori by Area</h2>
-
-        <img
-          class="area1"
-          src="images/aomori_city.jpg"
-          width="260"
-          height="320"
-        />
-
-        <img class="area2" src="images/hirosaki.JPG" width="260" height="320" />
-
-        <img
-          class="area3"
-          src="images/lake_towada.jpg"
-          width="260"
-          height="320"
-        />
-
-        <div class="description1">
-          Aomori City <br />
-          Awe-inspiring festivals, modern art, superb seafood and the world's
-          largest virgin beech forest.
-        </div>
-        <div class="description2">
-          Hirosaki <br />
-          Wild forests, waterfalls, a traditional castle town and a hiker’s
-          paradise.
-        </div>
-        <div class="description3">
-          Lake Towada<br />
-          Contemporary art, skiing, snow monsters, a mountaintop lake, and lush
-          wetlands.
-        </div>
-
-        <div class="video">
-          <iframe
-            height="100%"
-            width="100%"
-            src="https://www.youtube.com/embed/xiA6zUQNnvU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <div class="phrase">
-          <p>
-            Discover natural landscapes, primeval forests, apples, rice field
-            art, rice and sake, seafood and snow. Relatively unexplored,
-            Aomori's verdant landscapes, famous festivals and World Heritage
-            sites can all still be called “hidden gems.”
-          </p>
+      <!-- Hero -->
+      <div class="row g-0">
+        <div class="col-12">
+          <div
+            class="
+              jumbotron
+              d-flex
+              flex-column
+              justify-content-center
+              rounded-0
+              text-white
+              px-5
+            "
+            style="
+              background-image: url(images/landscape.jpg);
+              height: 60vh;
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <h2>Aomori</h2>
+            <h5 class="heroDesc">Take the road less traveled to Aomori</h5>
+            <p>
+              <a class="heroBtn btn btn-dark btn-large" href="#">Discover</a>
+            </p>
+          </div>
         </div>
       </div>
-
-      <footer class="footer">
-        <p class="footer__text">Aomori GUIDE</p>
-        <br />
-        <div class="footer__social">
-          <img src=images/logo_fb.svg width="40" height="40"/> <img
-          src=images/logo_ig.svg width="40" height="40"/>
+      <!-- Explore -->
+      <div class="container-fluid">
+        <div class="row my-5">
+          <div class="col-12">
+            <h4 class="text-center">Explore Aomori by Area</h4>
+          </div>
         </div>
-
-        <p class="footer__text">Copyright © 2021. All Rights Reserved.</p>
-      </footer>
+        <div class="row my-5">
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <img
+                class="card-img-top"
+                alt="Aomori City"
+                src="images/aomori_city.jpg"
+              />
+              <div
+                class="
+                  card-img-overlay
+                  d-flex
+                  flex-column
+                  justify-content-end
+                  text-light
+                  bg-dark bg-gradient bg-opacity-50
+                "
+              >
+                <h5 class="card-title">Aomori City</h5>
+                <p class="card-text">
+                  Awe-inspiring festivals, modern art, superb seafood and the
+                  world's largest virgin beech forest.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <img
+                class="card-img-top"
+                alt="Hirosaki Castle"
+                src="images/hirosaki.JPG"
+              />
+              <div
+                class="
+                  card-img-overlay
+                  d-flex
+                  flex-column
+                  justify-content-end
+                  text-light
+                  bg-dark bg-gradient bg-opacity-50
+                "
+              >
+                <h5 class="card-title">Hirosaki</h5>
+                <p class="card-text">
+                  Wild forests, waterfalls, a traditional castle town and a
+                  hiker’s paradise.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <img
+                class="card-img-top"
+                alt="Aomori City"
+                src="images/lake_towada.jpg"
+              />
+              <div
+                class="
+                  card-img-overlay
+                  d-flex
+                  flex-column
+                  justify-content-end
+                  text-light
+                  bg-dark bg-gradient bg-opacity-50
+                "
+              >
+                <h5 class="card-title">Lake Towada</h5>
+                <p class="card-text">
+                  Contemporary art, skiing, snow monsters, a mountaintop lake,
+                  and lush wetlands.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Video -->
+      <div class="ratio ratio-16x9">
+        <iframe
+          width="100%""          
+          src="https://www.youtube.com/embed/xiA6zUQNnvU?rel=0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <!-- Phrase -->
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-12">
+            <blockquote class="blockquote">
+              <p class="mb-0 fst-italic">
+                Discover natural landscapes, primeval forests, apples, rice
+                field art, rice and sake, seafood and snow. Relatively
+                unexplored, Aomori's verdant landscapes, famous festivals and
+                World Heritage sites can all still be called “hidden gems.”
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div>
+        <footer class="text-center">
+          <div class="text-center text-white p-3">Aomori GUIDE</div>
+          <div class="container pt-2">
+            <img src=images/logo_fb.svg width="40" height="40"/> <img
+            src=images/logo_ig.svg width="40" height="40"/>
+          </div>
+          <div class="text-center text-white p-4">
+            Copyright © 2021. All Rights Reserved.
+          </div>
+        </footer>
+      </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
