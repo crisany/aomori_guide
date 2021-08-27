@@ -40,11 +40,6 @@ header {
   }
 }
 
-/* explore */
-.cityPhoto img:hover {
-  transform: scale(1.2, 1.2);
-}
-
 /* footer */
 footer {
   background: rgb(55, 0, 103);
