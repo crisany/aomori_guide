@@ -1,0 +1,41 @@
+//hero animation
+
+.hero-desc {
+  animation-duration: 5s;
+  animation-name: pop;
+  animation-iteration-count: initial;
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//titles
+
+h3 {
+  color: $main-color;
+}
+
+//cards animation
+
+.card-hover {
+  height: auto;
+  overflow: hidden;
+}
+
+.card-hover img {
+  transition: transform 0.5s ease;
+}
+
+.card-hover:hover img {
+  transform: scale(1.2);
+}
+
+//Bootstrap customization
+$primary: $main-color;
+$enable-gradients: true;

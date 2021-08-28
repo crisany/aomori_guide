@@ -1,0 +1,46 @@
+//texts
+h4 {
+  color: $main-color;
+}
+
+@for $i from 1 through 3 {
+  .ptext-#{$i} {
+    font-weight: 700 / $i;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==tablet {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: 360px) {
+      @content;
+    }
+  }
+}
+
+p {
+  font-size: 1rem;
+
+  @include respond(tablet) {
+    font-size: 1.2rem;
+  }
+
+  @include respond(mobile) {
+    font-size: 1.4rem;
+  }
+}
+
+//arts and culture
+
+thead {
+  color: #fff;
+  background-color: $second-color;
+}
+
+//form
+$secondary: $second-color;

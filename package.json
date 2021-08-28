@@ -1,0 +1,30 @@
+{
+  "name": "aomori_guide",
+  "version": "1.0.0",
+  "description": "aomori travel guide webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crisany/aomori_guide.git"
+  },
+  "keywords": [
+    "aomori"
+  ],
+  "author": "Crisany Rivera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crisany/aomori_guide/issues"
+  },
+  "homepage": "https://github.com/crisany/aomori_guide#readme",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
+    "purgecss-webpack-plugin": "^4.0.3"
+  }
+}
